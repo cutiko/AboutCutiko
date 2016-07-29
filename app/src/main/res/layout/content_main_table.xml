@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow>
+
+        <TextView
+            style="@style/CustomTable.Header"
+            android:text="Area" />
+
+        <TextView
+            style="@style/CustomTable.Header"
+            android:text="Años" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            style="@style/CustomTable.Row"
+            android:text="Android" />
+
+        <TextView
+            style="@style/CustomTable.Row"
+            android:gravity="end"
+            android:text="2" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            style="@style/CustomTable.Row"
+            android:text="Rails y WordPress" />
+
+        <TextView
+            style="@style/CustomTable.Row"
+            android:gravity="end"
+            android:text="2" />
+
+    </TableRow>
+
+</merge>
