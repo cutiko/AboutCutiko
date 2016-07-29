@@ -35,20 +35,5 @@ public class ContactActivity extends AppCompatActivity {
             }
         });
 
-        Button button = (Button) findViewById(R.id.contactBtn);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_SENDTO);
-                intent.setType("*/*");
-                intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-                intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"cutiko@gmail.com"});
-                intent.putExtra(Intent.EXTRA_SUBJECT, "");
-                intent.putExtra(Intent.EXTRA_TEXT, "body");
-                startActivity(intent);
-            }
-        });
-
-        
     }
 }
