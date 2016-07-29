@@ -18,4 +18,71 @@
         android:padding="16dp"
         android:text="+56 9 51177975" />
 
+    <TextView
+        android:id="@+id/linkedin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:drawableStart="@mipmap/ic_linkedin_black_24dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Linkedin" />
+
+    <Button
+        android:id="@+id/contactBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linkedin"
+        android:background="@drawable/bg_accent"
+        android:padding="16dp"
+        android:text="ESCRIBIRME AHORA"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/subjectHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linkedin"
+        android:hint="Asunto"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/subjectInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/messageHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subjectHolder"
+        android:hint="Mensaje"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="4" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:textColor="@android:color/white"
+        android:id="@+id/sendBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messageHolder"
+        android:background="@drawable/bg_accent"
+        android:drawableEnd="@mipmap/ic_send_white_24dp"
+        android:padding="16dp"
+        android:text="ENVIAR"
+        android:visibility="visible" />
+
+
 </RelativeLayout>
