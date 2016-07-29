@@ -1,18 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_main"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cl.cutiko.aboutcutiko.MainActivity">
+    android:padding="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cl.cutiko.aboutcutiko.MainActivity"
+    tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/developer_resume" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/developer_experience"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:stretchColumns="1"
+            android:divider="?android:attr/dividerHorizontal"
+            android:showDividers="middle|end"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <TableRow>
+
+                <TextView
+                    style="@style/CustomTable.Header"
+                    android:text="Area" />
+
+                <TextView
+                    style="@style/CustomTable.Header"
+                    android:text="Años" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/CustomTable.Row"
+                    android:text="Android" />
+
+                <TextView
+                    style="@style/CustomTable.Row"
+                    android:gravity="end"
+                    android:text="2" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/CustomTable.Row"
+                    android:text="Rails y WordPress" />
+
+                <TextView
+                    style="@style/CustomTable.Row"
+                    android:gravity="end"
+                    android:text="2" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
